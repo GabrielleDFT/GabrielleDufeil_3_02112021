@@ -1,6 +1,6 @@
 # GabrielleDufeil_3_02112021
 
-                                                                    Création du site Ohmyfood
+                                               Création du site Ohmyfood
 
 
                                        Marque
@@ -10,7 +10,7 @@ utilisateurs de composer leur propre menu et réduire leur temps d’attente dan
 Plus de perte de temps à consulter la carte !
         
                       
-                                                                  Identité graphique
+                                                    Identité graphique
                                              
 Polices
 Logo et titres: Shrikhand
@@ -20,7 +20,7 @@ Couleurs
 Primaire Secondaire Tertiaire
 #9356DC #FF79DA #99E2D0
 
-                                                                  Technologies
+                                                    Technologies
                                               
 ● Le développement devra se faire en CSS, sans JavaScript.
 
