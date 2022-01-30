@@ -1,9 +1,6 @@
 # GabrielleDufeil_3_02112021
 
                                                Création du site Ohmyfood
-
-
-                                       Marque
 Identité
 Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux
 utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance. 
@@ -30,7 +27,7 @@ Primaire Secondaire Tertiaire
 
 ● Tout le code doit être versionné sur GitHub et le site devra être accessible sur Github Pages une fois terminé.
 
-                                              Compatibilité
+                                                     Compatibilité
                                               
 La cible étant les personnes connectées et pressées, le site sera développé en utilisant l’approche mobile-first. 
 Pour cette raison, seules des maquettes mobiles seront réalisées. Sur tablette et desktop, le site devra s’adapter, mais ces supports n’étant pas prioritaires,
@@ -43,7 +40,7 @@ leur mise en page est libre.
 ● Le site doit être parfaitement compatible avec les dernières versions desktop de Chrome et Firefox.
 
                            
-                                              Livrables attendus
+                                                     Livrables attendus
                                               
                                             🟣 Contenu des pages
 
