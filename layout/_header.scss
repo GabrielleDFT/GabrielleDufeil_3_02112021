@@ -1,0 +1,14 @@
+
+.ban {
+    @include banner_menu; 
+}
+ 
+.banner {
+    @include banner_home-page; 
+}
+    
+.main-wrapper {
+    @include full-menu; 
+}
+
+
