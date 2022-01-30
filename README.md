@@ -3,15 +3,14 @@
                                                        Création du site Ohmyfood! Paris
 
 
-                                                Marque
+                                       Marque
 Identité
 Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux
 utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance. 
-Plus de perte de temps à consulter la carte
-!
-                      ----------------------------------------------------------------------
+Plus de perte de temps à consulter la carte !
+        
                       
-                                             Identité graphique
+                                       Identité graphique
                                              
 Polices
 Logo et titres: Shrikhand
