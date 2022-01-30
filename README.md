@@ -17,19 +17,19 @@ Texte: Roboto
 
 Couleurs
 
-Primaire Secondaire Tertiaire
-
-#9356DC #FF79DA #99E2D0
+Primaire: #9356DC 
+Secondaire: #FF79DA 
+Tertiaire: #99E2D0
 
                                                     Technologies
                                               
-● Le développement devra se faire en CSS, sans JavaScript.
+●  Le développement devra se faire en CSS, sans JavaScript.
 
-● Aucun framework ne devra être utilisé, en revanche l’utilisation de SASS serait un plus.
+●  Aucun framework ne devra être utilisé, en revanche l’utilisation de SASS serait un plus.
 
-● Aucun code CSS ne devra être appliqué via un attribut style dans une balise HTML.
+●  Aucun code CSS ne devra être appliqué via un attribut style dans une balise HTML.
 
-● Tout le code doit être versionné sur GitHub et le site devra être accessible sur Github Pages une fois terminé.
+●  Tout le code doit être versionné sur GitHub et le site devra être accessible sur Github Pages une fois terminé.
 
                                                      Compatibilité
                                               
@@ -57,7 +57,7 @@ Page d’accueil (x1)
 
 Pages de menu (x4)
 
-● 4 pages contenant chacune le menu d’un restaurant.
+●  4 pages contenant chacune le menu d’un restaurant.
 
 
 Footer
