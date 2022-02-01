@@ -1,0 +1,112 @@
+
+.ban {
+    @include center;
+    align-items: center;
+    padding-bottom: 0;
+    padding-right: 70px;
+    margin-bottom: 0;
+    .logo {
+        padding-left: 20%; }
+}
+  
+.ban__arrow {
+    color: black;
+    font-size: 22px; 
+        &:hover {
+            color: $purple;
+            transform: scale(1.015); }
+} 
+
+.banner {
+    @include column;
+    align-items: center;
+    padding-bottom: nth($padding-dimensions, 1);
+    margin-bottom: 0;
+        &__map {
+            position: relative;
+            i {
+                position: absolute;
+                top: 30px;
+                left: -85px;
+                font-weight: bolder; }
+        }
+        &__form {
+            width: 100%;
+            margin-top: 10px;
+            display: flex;
+            height: 60px; }
+        &__search {
+            width: 100%;
+            font-size: 16px;
+            cursor: auto;
+            font-weight: bolder;
+            background-color: rgb(230, 229, 229);
+            border: none;
+            @include shadow;
+                ::placeholder {
+                    text-align: center; }
+
+        }
+} 
+  
+.main-wrapper {
+    background-color: $lightblue;
+    padding-top: nth($padding-dimensions2, 2);
+    position: relative;
+        h2 {
+            margin-bottom: 5px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid $sea-green;
+            width: 13%;
+            font-weight: normal;
+            margin: 40px 0 0 20px; }
+
+        &__title {
+            @include space;
+            position: absolute;
+            bottom: 96%;
+            background-color: $lightblue;
+            border-radius: 50px 50px 0 0;
+            width: 100%;
+            padding-top: nth($padding-dimensions2, 2); 
+                h1 {
+                    padding-top: 0;
+                    margin-top: 0;
+                    padding-left: 22px;
+                    font-size: 29px;
+                    font-family: $font-secondary;
+                        &:hover {
+                            color: $purple; } }
+                i {
+                    font-size: 28px;
+                    padding-top: nth($padding-dimensions2, 1);
+                    padding-right: nth($padding-dimensions2, 3);
+                        &:hover {
+                            opacity: 1;
+                            transition: .8s linear;
+                            cursor: pointer; } }
+                .far {
+                    position: absolute;
+                    left: 85%;
+                    top: 32%;
+                    font-size: 25px;
+                    padding-right: nth($padding-dimensions2, 4); 
+                        &:hover {
+                            display: inline-block;
+                            background: linear-gradient(to left, $purple, #b35cdc, #cf64dc, #e86edb, $pink);
+                            background-clip: text;
+                            color: transparent;
+                            font-weight: bold; }
+            }
+    } 
+}
+
+.main {
+    padding-top: 10px;
+        &__img {
+            width: 100%;
+            height: 265px;
+            object-fit: cover;  }
+        img {
+            width: 100%; }
+} 
