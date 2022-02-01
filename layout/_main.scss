@@ -1,0 +1,221 @@
+
+/*LOADING SPINNER*/
+.loader {
+    @include center;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.8;
+    animation: disappear 200ms 3s forwards;
+        &__circle {
+            width: 250px;
+            height: 250px;
+            border: 0px solid white;
+            border-radius: 50%;
+            position: absolute;
+                :nth-child(1) {
+                    border-bottom-width: 8px;
+                    border-color: $purple;
+                    animation: rotate 2s linear infinite; }
+                :nth-child(2) {
+                    border-right-width: 8px;
+                    border-color: $pink;
+                    animation: rotate2 2s linear infinite; }
+                :nth-child(3) {
+                    border-top-width: 8px;
+                    border-color: $sea-green;
+                    animation: rotate3 2s linear infinite; }
+        }  
+        &__loading {
+            color: $purple; }
+        &__turn {
+            color: $purple;
+            position: absolute;
+            top: 55%;
+            left: 47%;
+            animation: rotate 3s linear infinite; }
+}
+
+/*ACCUEIL*/
+.restaurants {
+    background-color: $lightblue;
+    margin-bottom: 0;
+    padding: 0 20px 50px 20px;
+        h2 {
+            padding-top: 50px;
+            font-family: $font-primary;
+            font-weight: bolder;
+            margin-bottom: 20px;
+            border-bottom: none;
+            margin-left: 0px; }
+        a {
+            text-decoration: none;
+            color: black; }
+}
+
+.card {
+    @include shadow;
+    width: 100%;
+    position: relative;
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 20px;
+    margin: 0 0 20px 0;
+    padding: 0;
+        &:hover {
+            transform: scale(1.015); }
+        img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
+            height: 165px; }
+        &__content {
+            position: relative; 
+            h3 {
+                font-weight: bolder;
+                padding: 20px 0 0 20px;
+                margin: 0; }
+            p {
+                padding: 5px 20px 15px 20px;
+                margin-top: 0; }
+            &__new {
+                position: absolute;
+                top: -158px;
+                left: 255px;
+                font-weight: bolder;
+                font-size: 14px;
+                background-color: $sea-green;
+                width: 27%;
+                height: 36%;
+                color: #008766;
+                border: 1px solid $sea-green;
+                border-radius: 5px; }
+            .far {
+                position: absolute;
+                left: 85%;
+                top: 20%;
+                font-size: 25px;
+                padding-right: 10px;
+                    &:hover {
+                        display: inline-block;
+                        background: linear-gradient(to left, $purple, #b35cdc, #cf64dc, #e86edb, $pink);
+                        background-clip: text;
+                        color: transparent;
+                        font-weight: bold; }
+            }  
+            .fas {
+                position: absolute;
+                left: 85%;
+                top: 20%;
+                font-size: 25px;
+                padding-right: 10px;
+                color: $purple;
+                opacity: 0;
+                    &:hover {
+                        opacity: 1;
+                        transition: .8s linear;
+                        cursor: pointer; }
+            } 
+        } 
+} 
+
+/*ACCUEIL PAGES MENU*/
+.cards {
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    @include shadow;
+    position: relative;
+    cursor: pointer;
+    transition: padding-right 450ms ease-in-out;
+    animation: appear 3s;
+        &:hover {
+            padding-right: 75px; }
+        h3 {
+            margin: 0;
+            font-size: 16px;
+            padding-right: 108px;
+            @include ellipsis; }
+        &__content {
+            @include between;
+            align-items: center;
+            line-height: 1.5em; 
+                p {
+                    font-size: 16px;
+                    margin: 0;
+                    @include ellipsis;
+                    padding-right: 27px; }
+                span {
+                    margin-right: 5px; }
+                .check {
+                    font-size: 12px;
+                    @include center;
+                    align-items: center;
+                    background-color: $sea-green;
+                    width: 15%;
+                    height: 100%;
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    position: absolute;
+                    padding: 0px;
+                    right: -50px;
+                    top: 0;
+                    opacity: 0;
+                    transition: transform 330ms ease-in-out; 
+                        &:hover {
+                            opacity: 1;
+                            transform: translate(-50px); }
+                        .fa-check-circle {
+                            color: white;
+                            transition: transform 500ms ease-in-out;
+                                &:hover{
+                                    transform: rotate(360deg); }
+                        } 
+                }
+        } 
+} 
+
+.check {
+    font-size: 12px;
+    @include center; 
+    align-items: center;
+    background-color: $sea-green;
+    width: 15%;
+    height: 100%; 
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    padding: nth($padding-dimensions, 2);
+    right: -50px;
+    top: 0;
+    opacity: 0;
+    transition: transform 330ms ease-in-out; 
+}
+  
+/*ORDER MENU*/
+.order {
+    @include center;
+    padding-top: 0;
+    background-color: $lightblue;
+        button {
+            background: linear-gradient(to left, $purple, #b35cdc, #cf64dc, #e86edb, $pink);
+            border-radius: 70px;
+            color: white;
+            font-weight: bold;
+            @include shadow;
+            cursor: pointer;
+            margin: 30px 0;
+            width: 45%;
+            border: none;
+            padding: 18px 45px 18px 45px;
+                &:hover {
+                    transform: scale(1.015);
+                    background-color: #ff93e1;
+                    background-blend-mode: lighten; 
+                    box-shadow: 14px 14px 16px 0 #9a9a9a; }
+        }
+}
